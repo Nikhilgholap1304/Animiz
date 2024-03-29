@@ -51,4 +51,4 @@ Contributions to enhance the website's features or fix issues are welcome! If yo
 
 ## 📄 License
 
-Check out the license ✒ [License](LICENSE.md)
+Check out the license ✒ [License](LICENSE.txt)
