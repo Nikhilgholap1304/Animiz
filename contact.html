@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact forum - Animiz</title>
+    <link rel="icon" href="img/OP_Flav.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/series.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <button type="button" class="btn_up" id="btn_up">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+
+    <!-- header starts -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Animiz <span>.</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home<span></span></a>
+            <a href="series.html">Series<span></span></a>
+            <a href="movies.html">Movies<span></span></a>
+            <a href="Latest.html">Latest <span></span></a>
+            <span>
+                <input type="text" placeholder="Search.." class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </nav>
+        <div class="icons">
+            <a href="contact.html" class="bi bi-chat-text" style="color:#ff4800"></a>
+            <i onclick="tog()" class="bi bi-brightness-high-fill" id="icon"></i>
+        </div>
+    </header>
+
+
+
+    <section class="content2">
+        <div class="sub_con2">
+            <div class="head2">
+                <h1 class="page_title">Message Us</h1>
+            </div>
+            <div class="main_con2">
+                <span class="description">
+                    <i class="bi bi-info-square-fill"></i>
+                    <p>This is a contact page or a medium where you can reach up to us by providing the significant
+                        feedbacks, anime requests, dead links or concerns as well</p>
+                </span>
+                <form action="https://formspree.io/f/mrgvrjpk" method="POST" id="my-form">
+
+                    <div class="input_cont">
+                        <label id="label1">Your Name <span>*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="input_cont1">
+                        <label id="label2">Email Address <span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input_cont3">
+                        <label id="label3">Your Subject <span>*</span></label>
+                        <input type="text" name="subject" id="subject" placeholder="Enter your subject" required>
+                    </div>
+                    <div class="input_cont4">
+                        <label id="label4">Your Message <span>*</span></label>
+                        <textarea name="message" id="message" minlength="5" placeholder="Type Your Message Here..."
+                            required></textarea>
+                    </div>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+
+                    <button type="submit" id="open-popup-btn">Send</button>
+                    <div class="popup center" id="status">
+                        <div class="icon">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="title">
+                            Thankyou !!
+                        </div>
+                        <div class="desc">
+                            Your message has been successfully submitted
+                        </div>
+                        <div class="dismiss-btn">
+                            <button id="dismiss-popup-btn">
+                                close
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popular">
+            <ul class="tab">
+                <li class="pop">Popular</li>
+                <li class="pop1"></li>
+            </ul>
+            <div class="sub_main">
+                <div class="cards">
+                    <div class="img_cont1">
+                        <img src="img/hxh.jpg" alt="">
+                    </div>
+                    <div class="img_detail">
+                        <a href="#">Hunter x Hunter (Complete Series + Movie) 1080p Dual Audio HEVC</a>
+                        <p><i class="bi bi-clock"></i>2 months ago</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img_cont1">
+                        <img src="img/aot3.jpg" alt="">
+                    </div>
+                    <div class="img_detail">
+                        <a href="#">Shingeki no Kyojin (Attack on Titan) (Seasons 1-4 + Movie + OVAs) 1080p Dual Audio
+                            HEVC</a>
+                        <p><i class="bi bi-clock"></i>1 month ago</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img_cont1">
+                        <img src="img/op4.jpg" alt="">
+                    </div>
+                    <div class="img_detail">
+                        <a href="#">One Piece (All Season + Movies + Film Red + OVAs) 1080p Dual Audio HEVC</a>
+                        <p><i class="bi bi-clock"></i>4 months ago</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img_cont1">
+                        <img src="img/ds1.jpg" alt="">
+                    </div>
+                    <div class="img_detail">
+                        <a href="#">Kimetsu no Yaiba (Demon Slayer) (Season 1,2,3 + Movie + OVAs) 1080p Dual Audio
+                            HEVC</a>
+                        <p><i class="bi bi-clock"></i>3 weeks ago</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img_cont1">
+                        <img src="img/dbz1.jpg" alt="">
+                    </div>
+                    <div class="img_detail">
+                        <a href="#">Dragon Ball (Z + Kai + Super + GT + Heroes + Movies + OVAs) 1080p BluRay Dual Audio
+                            HEVC</a>
+                        <p><i class="bi bi-clock"></i>5 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer starts -->
+    <section class="footer">
+        <div class="credit">© Copyright 2023, All Rights Reserved |
+            <div class="f_name">
+                <i class="fa-solid fa-heart" style="color: #ff0059;"></i><span> Animiz </span>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/nikhil.gholap.7127" class="fa-brands fa-facebook"></a>
+            <a href="https://www.instagram.com/nikhil__gholap1304" class="fa-brands      fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCz0jB02VZQqrRbb3KfwB7YQ" class="fa-brands fa-youtube"></a>
+            <a href="https://pin.it/Euqmyud" class="fa-brands fa-pinterest"></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/series.js"></script>
+
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.classList.add('active')
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+
+        //for thankyou pop-up.....
+
+        document.getElementById("dismiss-popup-btn").addEventListener("click", function () {
+            document.getElementsByClassName("popup")[0].classList.remove("active");
+        });
+    </script>
+
+</body>
+
+</html>

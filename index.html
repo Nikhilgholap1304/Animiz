@@ -1,0 +1,472 @@
+<!-- Home Page -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animiz ~ Anime download archieves </title>
+    <link rel="icon" href="img/OP_Flav.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <button type="button" class="btn_up" id="btn_up">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+
+    <header class="head">
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Animiz <span>.</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" style="color:#ff4800">Home <span class="on"></span> </a>
+            <a href="series.html">Series <span></span> </a>
+            <a href="movies.html">Movies <span></span> </a>
+            <a href="Latest.html">Latest <span></span> </a>
+            <span>
+                <input type="text" placeholder="Search.." class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </nav>
+        <div class="icons">
+            <a href="contact.html" class="bi bi-chat-text"> </a>
+            <i onclick="tog()" class="bi bi-brightness-high-fill" id="icon"></i>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slide_cont">
+            <span class="arrow" onclick="goPrev()"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </span>
+            <span class="arrow" onclick="goNext()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </span>
+
+
+            <div class="page">
+                <div class="img_box">
+                    <img src="img/opm.jpg" alt="">
+                    <a href="#">One Punch Man (Season 1-2 + OVAs) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/chainsawman.jpg" alt="">
+                    <a href="#">Chainsaw Man (Season 1) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/jk0.jpg" alt="">
+                    <a href="#">Jujutsu Kaisen 0 : The Movie 2160p Bluray Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/sxf.jpg" alt="">
+                    <a href="#">Spy x Family (Season 1 – Part 01 + 02) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/I_want_to.jpg" alt="">
+                    <a href="#">I Want to Eat Your Pancreas 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/dbz1.jpg" alt="">
+                    <a href="#">Dragon Ball (Series + Movies) 1080p BluRay Dual Audio HEVC</a>
+                </div>
+            </div>
+            <!-- page2 -->
+            <div class="page">
+                <div class="img_box">
+                    <img src="img/classroom.jpg" alt="">
+                    <a href="#">Classroom of the Elite (Season 1-2) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/op4.jpg" alt="">
+                    <a href="#">One Piece (All Season + Movies) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/yourname.jpg" alt="">
+                    <a href="">Your Name 2160p Bluray Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/summer.jpg" alt="">
+                    <a href="#">Summertime Render (Season 1) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/garden.jpg" alt="">
+                    <a href="">The Garden of Words 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/steins gate.jpg" alt="">
+                    <a href="">Steins;Gate (Seasons 1-2 + Movie) 1080p Dual Audio
+                        HEVC</a>
+                </div>
+            </div>
+            <!-- page3 -->
+            <div class="page">
+                <div class="img_box">
+                    <img src="img/ds1.jpg" alt="">
+                    <a href="#">Demon Slayer (Season 1,2,3 + Movie + OVAs) 1080p Dual Audio
+                        HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/silent.jpg" alt="">
+                    <a href="">A Silent Voice 1080p Bluray Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/promised.jpg" alt="">
+                    <a href="">The Promised Neverland (Season 1-2) 1080p Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/weathering.jpg" alt="">
+                    <a href="">Weathering with You 1080p BluRay Dual Audio HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/aot4.jpg" alt="">
+                    <a href="">Attack on Titan (Seasons 1-4 + Movie + OVAs) 1080p Dual Audio
+                        HEVC</a>
+                </div>
+                <div class="img_box">
+                    <img src="img/mha.jpg" alt="">
+                    <a href="">My Hero Academia (Seasons 1-6 +
+                        Movies) 1080p Dual Audio HEVC</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="content" id="content">
+        <div class="sub_content">
+            <div class="inner_content">
+                <h3 class="heading">Anime Series</h3>
+            </div>
+            <div class="head_content">
+                <div class="img">
+                    <img src="img/bleach.jpg" alt="">
+                </div>
+                <a href="#">Bleach (All Season + Thousand-Year Blood War) 1080p Dual Audio
+                    HEVC</a>
+            </div>
+            <div class="head_content">
+                <div class="img">
+                    <img src="img/haikyuu.jpg" alt="">
+                </div>
+                <a href="#">Haikyuu!! (Season 1-4 + Movie + OVAs) 1080p Dual Audio HEVC</a>
+            </div>
+            <div class="head_content">
+                <div class="img">
+                    <img src="img/mb100.jpg" alt="">
+                </div>
+                <a href="#">Mob Psycho 100 (Season 1-3 + OVAs + Specials) 1080p Dual Audio HEVC</a>
+            </div>
+            <div class="head_content">
+                <div class="img">
+                    <img src="img/Deathnote.jpg" alt="">
+                </div>
+                <a href="#">Death Note (Season 1 + Special) 1080p Dual Audio BluRay HEVC</a>
+            </div>
+            <div class="head_content">
+                <div class="img">
+                    <img src="img/jk.jpg" alt="">
+                </div>
+                <a href="#">Jujutsu Kaisen (Season 1 + Movie) 1080p Dual Audio HEVC
+                </a>
+            </div>
+            <div class="box_container">
+
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="thrill">
+                            <img src="img/aot2.jpg" alt="">
+                        </div>
+                        <a href="#">Shingeki no Kyojin (Attack on Titan) (Seasons 1-4 + Movie + OVAs) 1080p Dual Audio
+                            HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="action">
+                            <img src="img/naruto.jpg" alt="">
+                        </div>
+                        <a href="#">Naruto Shippuden (Season 1-21 + Naruto + Movies + OVAs) 1080p Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="action">
+                            <img src="img/op2.jpg" alt="">
+                        </div>
+                        <a href="#">One
+                            Piece (All Season + Movies + Film Red + OVAs) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="action">
+                            <img src="img/hh.jpg" alt="">
+                        </div>
+                        <a href="#">Hunter x Hunter (Complete Series + Movie) 1080p Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="power">
+                            <img src="img/dbz.jpg" alt="">
+                        </div>
+                        <a href="#">Dragon Ball (Z + Kai + Super + GT + Heroes + Movies + OVAs) 1080p BluRay Dual Audio
+                            HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="fantasy">
+                            <img src="img/bc.jpg" alt="">
+                        </div>
+                        <a href="#">Black Clover (Seasons 1-4 + OVAs) 1080p Dual Audio HEVC</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="sub_boxes">
+                    
+                    <div class="card_container">
+                        <div class="sub_img" name="fantasy">
+                            <img src="img/fabh.jpg" alt="">
+                        </div>
+                        <a href="#">Fullmetal Alchemist: Brotherhood (Season 1+ Movie + OVAs) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="sci-fi">
+                            <img src="img/dr.stone.jpg" alt="">
+                        </div>
+                        <a href="#">Dr. Stone (Seasons 1-2 + Specials) 1080p Dual Audio HEVC</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="sport">
+                            <img src="img/bl.jpg" alt="">
+                        </div>
+                        <a href="#">Blue Lock (Season 1) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="mecha">
+                            <img src="img/cg.jpg" alt="">
+                        </div>
+                        <a href="#">Code Geass (Seasons 1-2 + Movies) 1080p Bluray Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+                <div class="sub_boxes">
+                    
+                    <div class="card_container">
+                        <div class="sub_img" name="mecha">
+                            <img src="img/neon_ge.jpg" alt="">
+                        </div>
+                        <a href="#">Evangelion (All Season + Movies + OVAs + Specials) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="fantasy">
+                            <img src="img/re-zero.jpg" alt="">
+                        </div>
+                        <a href="#">Re:ZERO -Starting Life in Another World (Seasons 1-2 + Movie + OVAs) 1080p Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+                
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="Action">
+                            <img src="img/assasin.jpg" alt="">
+                        </div>
+                        <a href="#">Assassination Classroom (Seasons 1-2 + Movie + OVAs + Special) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="thrill">
+                            <img src="img/summer.jpg" alt="">
+                        </div>
+                        <a href="#">Summertime Render (Season 1) 1080p Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+
+                <div class="sub_boxes">
+
+                    <div class="card_container">
+                        <div class="sub_img" name="drama">
+                            <img src="img/classroom.jpg" alt="">
+                        </div>
+                        <a href="#">Classroom of the Elite (Season 1-2) 1080p Dual Audio HEVC</a>
+                    </div>
+                    <div class="card_container">
+                        <div class="sub_img" name="demon">
+                            <img src="img/dororo.jpg" alt="">
+                        </div>
+                        <a href="#">Dororo (Season 1) 1080p Dual Audio HEVC</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="more" id="more">
+                <a id="load_m">Load More >></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="end_content" id="end_content">
+
+        <div class="ends">
+
+            <div class="links">
+
+                <div class="inner_content">
+                    <h3 class="heading" id="genres">Genres</h3>
+                </div>
+                <div class="list">
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> action </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> adventure </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> comedy </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> demons </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> mecha </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> fantasy </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> drama </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> romance </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> sci-fi </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> sports </p>
+                    </a>
+                    <a>
+                        <p><i class="fa-solid fa-chevron-right"></i> super power </p>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="prof">
+                <div class="inner_content">
+                    <h3 class="heading" id="genres">Outro</h3>
+                </div>
+                <div class="profile">
+                    <div class="p_img">
+                        <img src="img/prof.jpg" alt="">
+                    </div>
+                    <div class="i_text">
+                        <h3><a href="#">Animiz</a></h3>
+                        <p>Everybody Cares... :|</p>
+                        <a href="#"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="movie">
+                <div class="inner_content">
+                    <h3 class="heading" style="font-size:1.8rem" ;>Movies</h3>
+                </div>
+                <div class="card-box">
+                    <div class="cards" name="drama" ><img src="img/yn1.jpg" alt="">
+                        <p class="title">Your Name (Kimi no Na wa) 2160p Bluray Dual Audio HEVC
+                        </p>
+                        <div class="s_icon">
+                            <p class="sub_t"><i class="fa-regular fa-clock"></i>45 mins ago</p>
+                            <p class="sub_t" id="fire"><i class="bi bi-fire" style="
+                            color: #ff2f00;"></i> 520
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cards" name="action"><img src="img/jk_o.jpg" alt="">
+                        <p class="title">Jujutsu Kaisen 0 the Movie 1080p Dual Audio Bluray HEVC
+                        </p>
+                        <div class="s_icon">
+                            <p class="sub_t"><i class="fa-regular fa-clock"></i>55 mins ago</p>
+                            <p class="sub_t" id="fire"><i class="bi bi-fire" style="
+                            color: #ff2f00;"></i> 720
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cards" name="fantasy"><img src="img/h_m1.jpg" alt="">
+                        <p class="title">Howl’s Moving Castle (Howl no Ugoku) 1080p Dual Audio HEVC
+                        </p>
+                        <div class="s_icon">
+                            <p class="sub_t"><i class="fa-regular fa-clock"></i>1 day ago</p>
+                            <p class="sub_t" id="fire"><i class="bi bi-fire" style="
+                            color: #ff2f00;"></i> 346
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cards" name="drama"><img src="img/s_v.jpg" alt="">
+                        <p class="title">A Silent Voice (Koe no Katachi) 1080p Bluray Dual Audio HEVC
+                        </p>
+                        <div class="s_icon">
+                            <p class="sub_t"><i class="fa-regular fa-clock"></i>2 days ago</p>
+                            <p class="sub_t" id="fire"><i class="bi bi-fire" style="
+                            color: #ff2f00;"></i> 973
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="credit">© Copyright 2023, All Rights Reserved |
+            <div class="f_name">
+                <i class="fa-solid fa-heart" style="color: #ff0059;"></i><span> Animiz </span>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/nikhil.gholap.7127" class="fa-brands fa-facebook"></a>
+            <a href="https://www.instagram.com/nikhil__gholap1304" class="fa-brands      fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCz0jB02VZQqrRbb3KfwB7YQ" class="fa-brands fa-youtube"></a>
+            <a href="https://pin.it/Euqmyud" class="fa-brands fa-pinterest"></a>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
