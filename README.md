@@ -2,6 +2,10 @@
 
 🌟Welcome to the Highly Responsive Anime Website project! This project is a sleek and modern website dedicated to anime content, featuring a highly responsive design with dark/light mode switch and a working feedback form.🌟
 
+## 🕶 Preview
+
+![Animiz Preview](animiz.png)
+
 ## 📝 Overview
 
 This website offers anime enthusiasts a visually appealing and user-friendly platform to explore their favorite anime series, movies, characters, and more. With its responsive design and dark/light mode switch, users can enjoy an optimized viewing experience across various devices and preferences.
